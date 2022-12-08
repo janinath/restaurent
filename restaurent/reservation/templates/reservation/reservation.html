@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <table class="rtable">
+        <th><h1>RESERVATION</h1></th>
+        <tr>
+            <td colspan="2"><img class="imgs" src="{% static 'images/reservation.png' %}"></td>
+        </tr>
+        <tr>
+            <td align="center"><b>If you a specific date in mind and are planning a standard event, you<br /> may choose to DIRECT BOOK.Otherwise, to discuss availability,pricing,<br/>and other specific needs,please choose INQUIRE NOW and we'll be in<br />touch soon</b></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="DIRECT BOOK"></td>
+            <TD><input type="button" value="INQUIRE NOW"></TD>
+        </tr>
+    </table>
+</body>
+</html>

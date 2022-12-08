@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body style="background-image:url('{% static "images/bg.jpg" %}') ;">
+    <table class="table">
+        <tr valign="top"  class="firstrow">
+            <td  class="imgtd" colspan="4"><img class="upimg" src="{% static 'images/upper.png'%}"></td>
+        </tr>
+        <tr align="center"  class="secondrow">
+            <td class="texts"><a href="{% url 'common:menu' %}"> menu</a></td>
+            <td class="texts"><a href="{% url 'reservation:reser' %}">reservation</a></td>
+            <td class="texts"><a href="#contact">contact</a></td>
+            <td class="texts"><a href="#our story">our story</a></td>
+        </tr>
+        <tr>
+            <td  colspan="4" ><img class="interior" src="{% static 'images/interior.jpg' %}"></td>
+        </tr>
+        
+       
+       
+
+    </table>
+    
+</body>
+</html>
+{% block content %}
+
+{% endblock %} 
